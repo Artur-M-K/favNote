@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    padding-left: 150px;
     font-size: 1.6rem; //set font for 16px - happy rems
     font-family: "Montserrat", sans-serif;
 }

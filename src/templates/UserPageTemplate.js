@@ -10,8 +10,13 @@ const UserPageTemplate = ({ children, pageType }) => (
 );
 
 UserPageTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
-  pageType: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.node]),
+  pageType: PropTypes.oneOf(['note', 'twitter', 'article']),
+};
+
+UserPageTemplate.defaultProps = {
+  pageType: 'note',
+  children: null,
 };
 
 export default UserPageTemplate;

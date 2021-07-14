@@ -18,7 +18,8 @@
         "import/prefer-default-export": 0,
         "import/no-extraneous-dependencies": 0,
         "react/no-unescaped-entities": 0,
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "no-unused-vars": "off"
     },
     "settings": {
         "import/resolver": {
